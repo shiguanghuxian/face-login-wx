@@ -2,6 +2,8 @@
 
 本示例程序实现了，添加用户、删除用户、用户列表、和用户登录功能。
 
+服务端：[https://github.com/shiguanghuxian/face-login](https://github.com/shiguanghuxian/face-login)
+
 ## 建议使用流程
 
 人脸识别登录建议流程：
