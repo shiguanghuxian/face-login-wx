@@ -1,0 +1,16 @@
+/* pages/user/user.wxss */
+.user{
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.user .bottom{
+    width: 100vw;
+    position: fixed;
+    bottom: 5vw;
+}
+
+.user .bottom button{
+    width: 90vw;
+    margin: 0 auto;
+}

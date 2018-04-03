@@ -1,0 +1,36 @@
+<!--pages/add/add.wxml-->
+<view class='container'>
+    <view class='add'>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="用户名" bindinput="bindInputUser" />
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="密码" bindinput="bindInputPwd" />
+                </view>
+            </view>
+        </view>
+
+
+        <view class='camera' wx:if="{{isCamera == false}}">
+            <camera device-position="front" flash="off" binderror="error" style="width: 100%; height: 350px;"></camera>
+        </view>
+
+        <view class='preview' wx:if="{{isCamera == true}}">
+            <image mode="widthFix" src="{{src}}" style="width: 100%; height: 350px;"></image>
+        </view>
+
+        <view class='btn'>
+            <button wx:if="{{isCamera == false}}" type="default" bindtap="takePhoto">拍照</button>
+            <button wx:if="{{isCamera == true}}" type="default" bindtap="reTakePhoto">重拍</button>
+        </view>
+
+        <view class='bottom'>
+            <button class="weui-btn" bindtap="addUser" type="primary"> 保存 </button>
+        </view>
+
+    </view>
+</view>

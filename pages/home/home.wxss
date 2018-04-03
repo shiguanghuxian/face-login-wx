@@ -1,0 +1,51 @@
+/* pages/home/home.wxss */
+.home{
+    width: 100vw;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.home .msg{
+    width: 100vw;
+    height: 38rpx;
+    font-size: 24rpx;
+    line-height: 38rpx;
+    background: #FF6666;
+    margin-bottom: 20rpx;
+    color: #333333;
+    padding-left: 20rpx;
+}
+
+.home .camera,.preview{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.home .userinfo{
+    display: flex;
+}
+
+.home .userinfo .l{
+    flex: 2;
+    padding: 20rpx;
+    font-size: 28rpx;
+    line-height: 80rpx;
+    color: #666666;
+}
+
+.home .userinfo .r{
+    flex: 1;
+    height: 110px;
+    padding: 20rpx;
+}
+
+.home .bottom{
+    width: 100vw;
+    position: fixed;
+    bottom: 5vw;
+}
+
+.home .bottom button{
+    width: 90vw;
+    margin: 0 auto;
+}

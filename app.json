@@ -1,0 +1,26 @@
+{
+    "pages": [
+        "pages/home/home",
+        "pages/user/user",
+        "pages/add/add"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "WeChat",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "selectedColor": "#d81e06",
+        "list": [
+            {
+                "pagePath": "pages/home/home",
+                "text": "人脸登录"
+            },
+            {
+                "pagePath": "pages/user/user",
+                "text": "用户列表"
+            }
+        ]
+    }
+}

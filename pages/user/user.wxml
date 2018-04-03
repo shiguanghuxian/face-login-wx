@@ -1,0 +1,24 @@
+<!--pages/user/user.wxml-->
+<view class='container'>
+    <view class='user'>
+        <view class="weui-cells__title">用户列表</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell" wx:for="{{list}}">
+                <view class="weui-cell__hd">
+                    <image src="{{item.face_url}}" style="margin-right: 5px;vertical-align: middle;width:40px; height: 40px;"></image>
+                </view>
+                <view class="weui-cell__bd">{{item.username}}</view>
+                <view class="weui-cell__ft">
+                    <button class="weui-btn" type="warn" size="mini" data-id="{{item.id}}" bindtap="delUser">删除</button>
+                </view>
+            </view>
+        </view>
+
+
+        <view class='bottom'>
+            <button class="weui-btn" bindtap="addUser" type="primary"> 添加 </button>
+        </view>
+
+
+    </view>
+</view>

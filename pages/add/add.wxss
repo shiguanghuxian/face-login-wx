@@ -1,0 +1,22 @@
+/* pages/add/add.wxss */
+.add{
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.add .camera,.preview,.btn{
+    width: 90vw;
+    margin: 0 auto;
+    margin-top: 20rpx;
+}
+
+.add .bottom{
+    width: 100vw;
+    position: fixed;
+    bottom: 5vw;
+}
+
+.add .bottom button{
+    width: 90vw;
+    margin: 0 auto;
+}
